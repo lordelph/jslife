@@ -1,10 +1,38 @@
 <html>
 <head>
 <title>jslife</title>
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script src="jslife.js"></script>
+<script src="life.js"></script>
+<style>
 
+body {
+	background:blue;
+}
+
+div.cell
+{
+	width:10px;
+	height:10px;
+	float:left;
+	background:#ddd;
+}
+
+div.alive
+{
+	background:black;
+}
+
+div.dead
+{
+	background:white;
+}
+
+</style>
 </head>
 <body>
+
+	<div id="grid"></div>
+
 </body>
 </html>
