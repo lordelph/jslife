@@ -29,13 +29,17 @@ function initGrid(gridsize)
 	var x;
 	var y;
 	for (y=0; y<gridsize; y++) {
+		var row='<div class="row">';
+
 		for (x=0; x<gridsize; x++) {
 			var divname='cell'+x+'_'+y;
 			var cell='<div class="cell" id="'+divname+'">&nbsp;</div>';
-			$('#grid').append(cell);
-			console.log(divname);
+			row=row+cell;
+
 		}
-		$('#grid').append('<br style="clear:both">');
+		var row=row+'</div>';
+
+		$('#grid').append(row);
 	}
 
 
