@@ -1,0 +1,19 @@
+body{
+
+}
+
+.liferow{
+	clear:both;
+}
+
+.lifecell {
+	width:10px;
+	height:10px;
+	float:left;
+	background:silver;
+	border:1px solid black;
+}
+
+.alive {
+	background:black;
+}
